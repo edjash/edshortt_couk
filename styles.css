@@ -254,48 +254,7 @@ section.projects img {
     filter: grayscale(80%);
 }
 
-/*Normal Nav*/
-nav ul {
-    display: flex;
-    gap: 10px;
-}
-
-nav li {
-    list-style: none;
-}
-
-nav li a {
-    text-decoration: none;
-}
-
-nav li a {
-    padding-left: 24px;
-    margin-left: 20px;
-    line-height: 24px;
-    height: 24px;
-    font-size: 12px;
-    background-size: 18px 18px;
-    background-position: left center;
-    background-repeat: no-repeat;
-    display: block;
-}
-
-nav .email a {
-    background-image: url('/images/email.png');
-
-}
-
-nav li.download a {
-    background-image: url('/images/download.png');
-}
-
-nav li a:hover {
-    filter: none;
-    text-decoration: underline;
-    color: var(--header-fg-color);
-}
-
-/*Mobile Nav*/
+/* Nav*/
 @keyframes slidein {
     from {
         width: 0;
@@ -350,14 +309,36 @@ nav {
     border-top: 1px solid #FFF;
     border-bottom: 1px solid #FFF;
     height: 50px;
-    align-items: center;
-    display: flex;
 }
 
 .nav-open nav li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
     color: black;
     font-size: inherit;
-    padding-left: 32px;
+    padding-left: 46px;
+    text-decoration: none;
+    background-size: 18px 18px;
+    background-position: 24px center;
+    background-repeat: no-repeat;
+}
+
+nav li.email a {
+    background-image: url('/images/email.png');
+}
+nav li.email a::after {
+    content: 'ed@edshortt.co.uk';
+}
+
+nav li.download a {
+    background-image: url('/images/download.png');
+}
+
+nav li:hover {
+    background: #d9d9d9;
+    cursor: pointer;
 }
 
 .nav-open nav ul {
@@ -365,10 +346,6 @@ nav {
     padding: 0px;
     display: grid;
     gap: 10px
-}
-
-nav li a:hover {
-    text-decoration: none;
 }
 
 .no-highlight {
