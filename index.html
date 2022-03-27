@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Ed Shortt - Web Dev</title>
+    <link href="reset.css?v=0325" rel="stylesheet" media="screen" type="text/css" />
+    <link href="styles.css?v=0325" rel="stylesheet" media="screen" type="text/css" />
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div>
+                <h1>Ed Shortt</h1>
+                <h3>WEB DEVELOPMENT SERVICES</h3>
+            </div>
+            <div id="hamburger" class="no-highlight" onclick="javascript:document.body.classList.toggle('nav-open')">
+                &equiv;
+            </div>
+            <nav id="nav">
+                <div class="close no-highlight" onclick="javascript:document.body.classList.toggle('nav-open')">X</div>
+                <ul id="menu">
+                    <li class="navItem email"><a href="mailto:dev@edshortt.co.uk">Email Me</a></li>
+                    <li class="navItem download"><a href="/cv.docx" download="EdShortt_CV.docx">CV</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="about">
+                <h2>About</h2>
+                <p>
+                    <span></span>
+                    I am an experienced web developer based in Brighton, UK. I have worked in many employment and
+                    freelance scenarios for 14 years, building and planning projects of all shapes and sizes. My work
+                    focuses on quality, meaning innovation, user friendliness, with no bugs, and on-time delivery.
+                </p>
+                <p>
+                    I am experienced at working in teams and collaborating with co-developers and stakeholders in an
+                    Agile management setting. I can also work entirely solo and self-managed from the ground-up to
+                    production. Whatever environment presents I am always focused on the end quality of the product and
+                    the satisfaction of all involved parties.
+                </p>
+                <p>
+                    I am currently available for a new project or work opportunity,
+                    whether it is short term or long term.
+                    If you are interested in working with me then please get in touch!
+                </p>
+            </section>
+            <span class="vr"></span>
+            <section class="expertise">
+                <h2>Technical Skills</h2>
+                <p>
+                    Web development is a continuous learning process.
+                    I am a full-stack developer with a well-rounded and practiced skillset.
+                    I have expertise at both frontend engineering
+                    and backend coding as well as linux server administration. I am fast
+                    to adapt to new technologies, while experience also lends me
+                    familiarity with legacy codebases.
+                </p>
+                <div class="grid">
+                    <dl class="frontend">
+                        <dt>Client</dt>
+                        <dd>React</dd>
+                        <dd>Javascript / ES6</dd>
+                        <dd>TypeScript</dd>
+                        <dd>HTML 5</dd>
+                        <dd>CSS 3 / SCSS</dd>
+                        <dd>Webpack</dd>
+                        <dd>jQuery</dd>
+                        <dd>EXTJS / Sencha</dd>
+                    </dl>
+                    <dl class="backend">
+                        <dt>Server</dt>
+                        <dd>Apache</dd>
+                        <dd>Linux Server</dd>
+                        <dd>Git / SVN</dd>
+                        <dd>Nodejs</dd>
+                        <dd>PHP</dd>
+                        <dd>Laravel</dd>
+                        <dd>MySQL</dd>
+                    </dl>
+                </div>
+            </section>
+            <section class="examples">
+                <h2>Sample Work</h2>
+                <ul>
+                    <li>
+                        <a href="https://crmdemo.co.uk" target="_blank"><b>crmdemo.co.uk</b></a> [username:
+                        demo@crmdemo.co.uk, password: demo123]<br />
+                        Source Code: <a href="https://github.com/edjash/crm-frontend" target="_blank">React
+                            frontend</a>,
+                        <a href="https://github.com/edjash/crm-server" target="_blank">Laravel backend</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="projects">
+                <h2>Previous Projects</h2>
+                <div>
+                    <figure>
+                        <img src="images/crm.png" />
+                        <figcaption>Bespoke Conveyancing CRM</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/lms.png" />
+                        <figcaption>Learning Management System</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/cloudoffice.png" />
+                        <figcaption>Web-based office application suite</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/accounting.png" />
+                        <figcaption>HMRC API Integration</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/progress.png" />
+                        <figcaption>Student Progress Reporting</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/shoppingcart.png" />
+                        <figcaption>Shopping Cart Software</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/ecommerce.png" />
+                        <figcaption>Custom E-commerce Sites</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/imagetool.png" />
+                        <figcaption>Image Editing Software</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </main>
+        <footer>
+            &copy; <span id="year">2022</span>&nbsp;Ed Shortt
+        </footer>
+        <script>
+            document.getElementById('year').innerHTML = new Date().getFullYear();
+            document.getElementById('nav').addEventListener('click', (e) => e.stopPropagation());
+            document.getElementById('nav').addEventListener('touchstart', (e) => e.stopPropagation());
+            document.getElementById('hamburger').addEventListener('click', (e) => e.stopPropagation());
+            document.getElementById('hamburger').addEventListener('touchstart', (e) => e.stopPropagation());
+            document.body.addEventListener('click', (e) => document.body.className = '');
+            document.body.addEventListener('touchstart', (e) => document.body.className = '');
+        </script>
+    </div>
+</body>
+
+</html>
