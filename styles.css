@@ -328,6 +328,7 @@ nav {
 nav li.email a {
     background-image: url('/images/email.png');
 }
+
 nav li.email a::after {
     content: 'ed@edshortt.co.uk';
 }
