@@ -3,151 +3,342 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <title>Ed Shortt - Web Development</title>
     <link rel="icon" type="image/png" href="favicon.png" />
     <link href="reset.css?v=0325" rel="stylesheet" media="screen" type="text/css" />
     <link href="styles.css?v=0325" rel="stylesheet" media="screen" type="text/css" />
+    <link href="/thirdparty/flickity/flickity.min.css" rel="stylesheet" />
 </head>
 
 <body>
     <div id="container">
         <header>
-            <div>
-                <h1>Ed Shortt</h1>
-                <h3>WEB DEVELOPMENT SERVICES</h3>
+
+            <div id="logo">
+                <h1>Ed Shortt <span>Full Stack Web Developer</span></h1>
             </div>
-            <div id="hamburger" class="no-highlight" onclick="javascript:document.body.classList.toggle('nav-open')">
-                &equiv;
+            <div class="contact">
+                <a href="tel:+4407463007071" class="phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path
+                            d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" />
+                    </svg>
+                    <span>&nbsp;+44 07463 007071</span>
+                </a>
+                <a href="mailto:ed@edshortt.dev"> <svg xmlns="http://www.w3.org/2000/svg" height="24"
+                        viewBox="0 -960 960 960" width="24">
+                        <path
+                            d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+                    </svg><span>&nbsp;ed@edshortt.dev</span></a>
             </div>
-            <nav id="nav">
-                <div class="close no-highlight" onclick="javascript:document.body.classList.toggle('nav-open')">X</div>
-                <ul id="menu">
-                    <li class="navItem email"><a href="mailto:ed@edshortt.co.uk"></a></li>
-                    <li class="navItem download"><a href="/cv.docx" download="EdShortt_CV.docx">CV</a></li>
-                </ul>
-            </nav>
         </header>
         <main>
             <section class="about">
                 <h2>About</h2>
                 <p>
-                    <span></span>
-                    I am an experienced web developer based in Brighton, UK. I have worked in many employment and
-                    freelance scenarios for 14 years, building and planning projects of all shapes and sizes. My work
-                    focuses on quality, meaning innovation, user friendliness, with no bugs, and on-time delivery.
+                    I'm Ed Shortt, an experienced web developer based in Brighton, UK.
                 </p>
                 <p>
-                    I am experienced at working in teams and collaborating with co-developers and stakeholders in an
-                    Agile management setting. I can also work entirely solo and self-managed from the ground-up to
-                    production. Whatever environment presents I am always focused on the end quality of the product and
-                    the satisfaction of all involved parties.
+                    I specialise in creating robust, user-centric experiences with an emphasis on code quality and
+                    performance. Whether
+                    collaborating on large-scale projects or
+                    tackling solo ventures, I prioritise solutions that deliver tangible value and impact.
                 </p>
                 <p>
-                    I am currently available for a new project or work opportunity,
-                    whether it is short term or long term.
-                    If you are interested in working with me then please get in touch!
+                    My coding philosophy centres around writing clean, maintainable code for long-term viability and
+                    prioritises intuitive user interfaces that are both visually appealing and high-performing.
+                </p>
+                <p>
+                    If you're interested in working together, please don't hesitate to get in touch!
                 </p>
             </section>
-            <span class="vr"></span>
-            <section class="expertise">
+            <section class="skills">
                 <h2>Technical Skills</h2>
                 <p>
-                    Web development is a continuous learning process.
-                    I am a full-stack developer with a well-rounded and practiced skillset.
-                    I have expertise at both frontend engineering
-                    and backend coding as well as linux server administration. I am fast
-                    to adapt to new technologies, while experience also lends me
-                    familiarity with legacy codebases.
+                    My technical skills allow me to handle all facets of online development, from implementing brand
+                    identities to automating intricate background processes. Beyond that, I bring experience in
+                    structuring and managing the development lifecycle.
                 </p>
-                <div class="grid">
-                    <dl class="frontend">
-                        <dt>Client</dt>
-                        <dd>React</dd>
-                        <dd>Javascript / ES6</dd>
-                        <dd>TypeScript</dd>
-                        <dd>HTML 5</dd>
-                        <dd>CSS 3 / SCSS</dd>
-                        <dd>Webpack</dd>
-                        <dd>jQuery</dd>
-                        <dd>EXTJS / Sencha</dd>
-                    </dl>
-                    <dl class="backend">
-                        <dt>Server</dt>
-                        <dd>Apache</dd>
-                        <dd>Linux Server</dd>
-                        <dd>Git / SVN</dd>
-                        <dd>Nodejs</dd>
-                        <dd>PHP</dd>
-                        <dd>Laravel</dd>
-                        <dd>MySQL</dd>
-                    </dl>
+                <div id="skill-lists">
+                    <div>
+                        <h3>Core Skills</h3>
+                        <ul>
+                            <li>PHP</li>
+                            <li>JavaScript</li>
+                            <li>MySQL</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Apache / Linux</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Platforms & Frameworks</h3>
+                        <ul>
+                            <li>Laravel</li>
+                            <li>ModX</li>
+                            <li>NodeJS</li>
+                            <li>ExtJS / Sencha</li>
+                            <li>Flutter</li>
+                            <li>Dynamics</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Other</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>C#</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
-            <section class="examples">
-                <h2>Sample Work</h2>
-                <ul>
-                    <li>
-                        <a href="https://crmdemo.co.uk" target="_blank"><b>crmdemo.co.uk</b></a> [username:
-                        demo@crmdemo.co.uk, password: demo123]<br />
-                        Source Code: <a href="https://github.com/edjash/crm-frontend" target="_blank">React
-                            frontend</a>,
-                        <a href="https://github.com/edjash/crm-server" target="_blank">Laravel backend</a>
-                    </li>
-                </ul>
-            </section>
             <section class="projects">
-                <h2>Previous Projects</h2>
-                <div>
+                <h2>Previous Work</h2>
+                <p>I've had the opportunity to create and contribute to impressive and
+                    sophisticated online systems. My expertise extends to working on various CRMs, e-learning, and
+                    e-commerce platforms.</p>
+                <div class="carousel">
                     <figure>
                         <img src="images/crm.png" />
                         <figcaption>Bespoke Conveyancing CRM</figcaption>
+                        <div>
+                            <p>
+                                For this project I created a bespoke CRM for a conveyancing firm. The system was created
+                                from the ground up and was
+                                designed to manage the entire conveyancing process, from initial quote to completion.
+                                The system was built using Laravel and Vue.js and included integrations with third-party
+                                APIs
+                                such as the Land Registry and Companies House.
+                            </p>
+                        </div>
                     </figure>
                     <figure>
                         <img src="images/lms.png" />
                         <figcaption>Learning Management System</figcaption>
+                        <div>
+                            <p>
+                                I was responsible for the development of a Learning Management System for a large
+                                e-learning company. The system was built using
+                                Laravel and React and included a wide range of features such as course creation, student
+                                progress tracking, and a web-based office application suite.
+                            </p>
+                        </div>
                     </figure>
                     <figure>
                         <img src="images/cloudoffice.png" />
                         <figcaption>Web-based office application suite</figcaption>
+                        <div>
+                            <p>
+                                I was responsible for the development of a web-based office application suite for a
+                                large e-learning company. The suite included a
+                                range of applications such as a word processor, spreadsheet, and presentation software.
+                                The suite was built using React and included integrations with third-party APIs such as
+                                Google Drive and Microsoft Office.
+                            </p>
+                        </div>
                     </figure>
                     <figure>
                         <img src="images/accounting.png" />
                         <figcaption>HMRC API Integration</figcaption>
+                        <div>
+                            <p>
+                                I was responsible for the development of an API integration with HMRC for a large
+                                accounting firm. The integration allowed the firm to
+                                automatically submit VAT returns and access client tax information directly from the
+                                HMRC
+                                API. The system was built using Laravel and included integrations with third-party APIs
+                                such as Xero and Quickbooks.
+                            </p>
+                        </div>
                     </figure>
                     <figure>
                         <img src="images/progress.png" />
                         <figcaption>Student Progress Reporting</figcaption>
+                        <div>
+                            <p>
+                                I was responsible for the development of a student progress reporting system for a large
+                                e-learning company. The system was built using
+                                Laravel and React and included a wide range of features such as student progress
+                                tracking,
+                                course completion certificates, and student feedback.
+                            </p>
+                        </div>
                     </figure>
                     <figure>
                         <img src="images/shoppingcart.png" />
                         <figcaption>Shopping Cart Software</figcaption>
+                        <div>
+                            <p>
+                                I was responsible for the development of a shopping cart software for a large e-commerce
+                                company. The software was built using Laravel and
+                                React and included a wide range of features such as product management, order
+                                processing,
+                                and customer management.
+                            </p>
+                        </div>
                     </figure>
                     <figure>
                         <img src="images/ecommerce.png" />
                         <figcaption>Custom E-commerce Sites</figcaption>
+                        <div>
+                            <p>
+                                I was responsible for the development of a range of custom e-commerce sites for a large
+                                e-commerce company. The sites were built using
+                                Laravel and React and included a wide range of features such as product management,
+                                order
+                                processing, and customer management.
+                            </p>
+                        </div>
                     </figure>
                     <figure>
                         <img src="images/imagetool.png" />
                         <figcaption>Image Editing Software</figcaption>
+                        <div>
+                            <p>
+                                I was responsible for the development of an image editing software for a large
+                                e-commerce
+                                company. The software was built using React and
+                                included a wide range of features such as image cropping, resizing, and watermarking.
+                            </p>
+                        </div>
                     </figure>
                 </div>
             </section>
+            <!--
+            <section class="sample">
+                <h2>Live Example</h2>
+                <p>
+                    <a href="https://crmdemo.co.uk" target="_blank">crmdemo.co.uk</a>
+                    <br /><br />Username: demo@crmdemo.co.uk<br />Password: demo123<br />
+                    Source Code: <a href="https://github.com/edjash/crm-frontend" target="_blank">React
+                        frontend</a>,
+                    <a href="https://github.com/edjash/crm-server" target="_blank">Laravel backend</a>
+                </p>
+            </section>
+        -->
         </main>
-        <footer>
-            &copy; <span id="year">2022</span>&nbsp;Ed Shortt
-        </footer>
-        <script>
-            document.getElementById('year').innerHTML = new Date().getFullYear();
-            document.getElementById('nav').addEventListener('click', (e) => e.stopPropagation());
-            document.getElementById('nav').addEventListener('touchstart', (e) => e.stopPropagation());
-            document.getElementById('hamburger').addEventListener('click', (e) => e.stopPropagation());
-            document.getElementById('hamburger').addEventListener('touchstart', (e) => e.stopPropagation());
-            document.body.addEventListener('click', (e) => document.body.className = '');
-            document.body.addEventListener('touchstart', (e) => document.body.className = '');
-        </script>
     </div>
+    <script src="/thirdparty/flickity/flickity.pkgd.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var flkty = new Flickity('.carousel', {
+                wrapAround: true,
+                autoPlay: false,
+                pageDots: true,
+                prevNextButtons: false,
+                watchCSS: true,
+                selectedAttraction: 1,
+                friction: 1
+            });
+
+            document.querySelectorAll('.carousel figure').forEach(function (el) {
+                el.addEventListener('click', function () {
+                    showModal(el);
+                });
+            });
+
+            function createElement(tag, attributes = {}, ...children) {
+                const element = document.createElement(tag);
+                Object.keys(attributes).forEach(key => element.setAttribute(key, attributes[key]));
+                children.forEach(child => {
+                    if (typeof child === 'string') {
+                        element.innerHTML += child;
+                    } else {
+                        element.appendChild(child);
+                    }
+                });
+                return element;
+            }
+
+            function createMask() {
+                let mask = document.getElementById('mask');
+                if (mask) {
+                    return mask;
+                }
+                mask = createElement('div', { id: 'mask' });
+                document.body.prepend(mask);
+                mask.classList.add('show');
+                return mask;
+            }
+
+            let modalZindex = 1001;
+
+            const closeModal = function (modalContainer) {
+                modalContainer.classList.remove('show');
+                setTimeout(() => {
+                    modalContainer.remove();
+                    if (document.querySelectorAll('.modal-container').length == 0) {
+                        mask.classList.remove('show');
+                        setTimeout(() => {
+                            mask.remove();
+                        }, 500);
+                    }
+                }, 300);
+            };
+
+            const showModal = (figure) => {
+                const mask = createMask();
+                modalZindex++;
+                const index = Array.from(figure.parentNode.children).indexOf(figure) + 1;
+                const total = figure.parentNode.querySelectorAll('figure').length;
+                const nextDisabled = (index == total) ? ' disabled' : '';
+                const prevDisabled = (index == 1) ? ' disabled' : '';
+
+                const modalContainer = createElement('div', { class: 'modal-container' });
+                const modalContent = createElement('div', { class: 'modal-content' });
+
+                // Create the modal content
+                const img = figure.querySelector('img');
+                const h2 = createElement('h2', {}, figure.querySelector('figcaption').innerHTML);
+                const imgElement = createElement('img', { src: img.src });
+                const divContent = createElement('div', {}, figure.querySelector('div').innerHTML);
+                const buttons = createElement('div', { class: 'buttons' },
+                    createElement('div', { class: `button previous${prevDisabled}`, 'data-index': index - 1 }, 'Previous'),
+                    createElement('div', {}, `${index} of ${total}`),
+                    createElement('div', { class: `button next${nextDisabled}`, 'data-index': index + 1 }, 'Next')
+                );
+                const closeLink = createElement('a', { class: 'modal-close-link' }, 'Close');
+
+                // Append the elements to the modal content
+                modalContent.appendChild(h2);
+                modalContent.appendChild(imgElement);
+                modalContent.appendChild(divContent);
+                modalContent.appendChild(buttons);
+                modalContent.appendChild(closeLink);
+                modalContainer.style.zIndex = modalZindex;
+                modalContainer.appendChild(modalContent);
+
+                document.body.appendChild(modalContainer);
+
+                // Show the modal
+                setTimeout(() => {
+                    modalContainer.classList.add('show');
+                }, 50);
+
+                // Add event listeners
+                const handleNavigation = function (e) {
+                    if (e.target.classList.contains('disabled')) {
+                        return;
+                    }
+                    const newIndex = parseInt(e.target.getAttribute('data-index')) - 1;
+                    const newFigure = figure.parentNode.querySelectorAll('figure')[newIndex];
+                    showModal(newFigure, true);
+                    modalContainer.remove();
+                };
+
+
+                closeLink.addEventListener('click', () => {
+                    closeModal(modalContainer);
+                });
+                modalContainer.querySelector('.next').addEventListener('click', handleNavigation);
+                modalContainer.querySelector('.previous').addEventListener('click', handleNavigation);
+
+
+            }
+        });
+    </script>
 </body>
 
 </html>
