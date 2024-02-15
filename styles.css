@@ -135,6 +135,7 @@ header #logo {
 }
 
 @media (hover: hover) {
+
     /* Media query is used because on some mobile devices, 
     a touch event can trigger the :hover CSS pseudo-class */
     .contact a:hover span {
@@ -226,6 +227,7 @@ section.projects figcaption {
     justify-content: center;
     overflow: hidden;
     user-select: none;
+    cursor: pointer;
 }
 
 .button.disabled {
@@ -289,10 +291,15 @@ section.projects figcaption {
     display: block;
     margin: 20px auto 10px auto;
     border: 2px solid var(--border-color);
+    border-radius: 5px;
 }
 
 .modal-content p {
-    padding: 20px;
+    padding: 20px 0px 0px 0px;
+    width: 80%;
+    max-width: 1000px;
+    display: block;
+    margin: auto;
 }
 
 .modal-content .button {
@@ -300,6 +307,7 @@ section.projects figcaption {
 }
 
 .modal-content .buttons {
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -309,6 +317,7 @@ section.projects figcaption {
 .modal-close-link {
     display: block;
     margin-top: 60px;
+    cursor: pointer;
 }
 
 /* Tablet styles */
@@ -389,5 +398,13 @@ section.projects figcaption {
     section p {
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .modal-container {
+        width: 900px;
+        height: 700px;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-450px);
     }
 }
